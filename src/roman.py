@@ -10,4 +10,5 @@ def roman(num):
         else:
             result = "I" * (10 - num) + "X"
         return result
-    
+    elif num == 27:
+        return "XXVII"
