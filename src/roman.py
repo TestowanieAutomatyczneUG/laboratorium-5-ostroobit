@@ -1,17 +1,12 @@
 def roman(num):
-    if num == 1:
-        return "I"
-    elif num == 2:
-        return "II"
-    elif num == 3:
-        return "III"
-    elif num == 4:
-        return "IV"
-    elif num == 5:
-        return "V"
-    elif num == 6:
-        return "VI"
-    elif num == 7:
-        return "VII"
-    elif num == 9:
-        return "IX"
+    result = ""
+    if num <= 10:
+        if num <= 3:
+           result = "I" * num
+        elif num == 4:
+            result = "IV"
+        elif num <= 8:
+            result = "V" + "I" * (num - 5)
+        else:
+            result = "I" * (10 - num) + "X"
+        return result
