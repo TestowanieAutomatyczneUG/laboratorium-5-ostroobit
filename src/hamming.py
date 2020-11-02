@@ -1,2 +1,3 @@
 def distance(str1, str2):
-    pass
+    if str1 == "" and str2 == "":
+        return 0
