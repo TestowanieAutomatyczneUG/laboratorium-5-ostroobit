@@ -30,7 +30,7 @@ class HammingTest(unittest.TestCase):
     def test_disallow_left_empty_strand(self):
         with self.assertRaisesWithMessage(ValueError):
             hamming.distance("", "G")
-    @unittest.skip("Not implemented yet")
+
     def test_disallow_right_empty_strand(self):
         with self.assertRaisesWithMessage(ValueError):
             hamming.distance("G", "")
