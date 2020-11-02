@@ -4,7 +4,9 @@ def distance(str1, str2):
     elif len(str1) > len(str2):
         raise ValueError("Strands' lengths must be equal!")
     elif len(str2) > len(str1):
-        raise ValueError("Strands' lengths must be longer")    
+        raise ValueError("Strands' lengths must be longer")
+    elif len(str1) == 0:
+        raise ValueError("First strand cannot be empty!")
     else:
         result = 0
         for x in range(len(str1)):
