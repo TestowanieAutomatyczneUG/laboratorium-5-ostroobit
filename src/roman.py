@@ -11,3 +11,5 @@ def roman(num):
         return "V"
     elif num == 6:
         return "VI"
+    elif num == 7:
+        return "VII"
