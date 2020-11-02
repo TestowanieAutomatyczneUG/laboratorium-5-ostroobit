@@ -7,7 +7,7 @@ def distance(str1, str2):
         raise ValueError("Strands' lengths must be longer")
     elif len(str1) == 0:
         raise ValueError("First strand cannot be empty!")
-    elif len(str2 == 0):
+    elif len(str2) == 0:
         raise ValueError("Second strand cannot be empty!")
     else:
         result = 0
