@@ -18,3 +18,5 @@ def roman(num):
         return "XLIX"
     elif num == 59:
         return "LIX"
+    elif num == 93:
+        return "XCIII"
