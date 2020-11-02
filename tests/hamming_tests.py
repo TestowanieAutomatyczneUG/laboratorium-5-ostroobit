@@ -26,7 +26,7 @@ class HammingTest(unittest.TestCase):
     def test_disallow_second_strand_longer(self):
         with self.assertRaisesWithMessage(ValueError):
             hamming.distance("ATA", "AGTG")
-    @unittest.skip("Not implemented yet")
+
     def test_disallow_left_empty_strand(self):
         with self.assertRaisesWithMessage(ValueError):
             hamming.distance("", "G")
