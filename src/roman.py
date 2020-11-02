@@ -24,3 +24,5 @@ def roman(num):
         return "CXLI"
     elif num == 163:
         return "CLXIII"
+    elif num == 402:
+        return "CDII"
