@@ -11,3 +11,5 @@ class Song:
             return self.text[0]
         elif index == 2:
             return self.text[1]
+        elif index == 3:
+            return self.text[2]
