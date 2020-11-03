@@ -9,3 +9,5 @@ class Song:
     def get_verse(self, index):
         if index == 1:
             return self.text[0]
+        elif index == 2:
+            return self.text[1]
