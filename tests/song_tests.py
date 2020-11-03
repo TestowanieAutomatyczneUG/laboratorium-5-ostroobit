@@ -28,6 +28,8 @@ class SongTest(unittest.TestCase):
             "On the fifth day of Christmas my true love gave to me: five Gold Rings, four Calling Birds, three French Hens, two Turtle Doves, and a Partridge in a Pear Tree.",
             "On the sixth day of Christmas my true love gave to me: six Geese-a-Laying, five Gold Rings, four Calling Birds, three French Hens, two Turtle Doves, and a Partridge in a Pear Tree."
         ])
+    def test_verses_5_to_5(self)
+                self.assertEqual(self.temp.get_verses(5, 5), "On the fifth day of Christmas my true love gave to me: five Gold Rings, four Calling Birds, three French Hens, two Turtle Doves, and a Partridge in a Pear Tree.")
 
     def tearDown(self):
         self.temp = None
