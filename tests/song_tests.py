@@ -39,7 +39,7 @@ class SongTest(unittest.TestCase):
             self.temp.get_verse("a")
     def test_get_verses_type_error(self):
         with self.assertRaises(TypeError):
-            self.temp.get_verse("a", 1.5) 
+            self.temp.get_verse("a", 1.5)
 
     def tearDown(self):
         self.temp = None
