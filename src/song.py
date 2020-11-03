@@ -5,6 +5,7 @@ class Song:
             for line in file:
                 if line != "\n":
                     self.text.append(line[:-1])
+            self.text[-1] += "." 
     
     def get_verse(self, index):
         return self.text[index - 1]
@@ -13,3 +14,6 @@ class Song:
         if index1 == index2:
             return self.get_verse(index1)
         return self.text[index1 - 1 : index2 ]
+
+    def get_song(self):
+        return self.text
