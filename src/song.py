@@ -8,6 +8,8 @@ class Song:
             self.text[-1] += "." 
     
     def get_verse(self, index):
+        if type(index) != int:
+            raise TypeError
         return self.text[index - 1]
     
     def get_verses(self, index1, index2):
