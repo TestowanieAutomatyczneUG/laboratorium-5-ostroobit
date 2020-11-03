@@ -8,3 +8,6 @@ class Song:
     
     def get_verse(self, index):
         return self.text[index - 1]
+    
+    def get_verses(self, index1, index2):
+        return self.text[index1 - 1 : index2 ]
